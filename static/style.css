@@ -1,0 +1,65 @@
+:root {
+    --primary-blue: #1a237e;
+    --accent-cyan: #00e5ff;
+    --bg-light: #f8f9fa;
+    --text-dark: #2c3e50;
+    --success-green: #2ecc71;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-dark);
+}
+
+/* Login Container */
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.brand-logo {
+    font-weight: 800;
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-blue);
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #283593;
+    transform: translateY(-2px);
+}
+
+/* Form Styling */
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+}
+
+.form-control:focus {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 0 0.25rem rgba(0, 229, 255, 0.1);
+}
